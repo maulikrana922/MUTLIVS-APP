@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_manual_vitals_input_dialog"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:id="@+id/number_picker_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <NumberPicker
+            android:id="@+id/temperature_integer_numbers_number_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_200sdp"
+            android:descendantFocusability="blocksDescendants"
+            android:theme="@style/NumberPickerText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:text="@string/dot"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_19ssp"
+            tools:ignore="MissingPrefix" />
+
+        <NumberPicker
+            android:id="@+id/temperature_decimal_number_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_200sdp"
+            android:descendantFocusability="blocksDescendants"
+            android:theme="@style/NumberPickerText" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/number_picker_layout"
+        android:text="@string/fahrenheit"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_19ssp"
+        android:fontFamily="@font/roboto_regular"
+        app:layout_constraintBottom_toBottomOf="@+id/number_picker_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/number_picker_layout"
+        app:layout_constraintTop_toTopOf="@+id/number_picker_layout"
+        tools:ignore="MissingPrefix" />
+
+
+    <TextView
+        android:id="@+id/dialog_header_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_toStartOf="@id/number_picker_layout"
+        android:text="@string/Temperature"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_19ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/number_picker_layout"
+        app:layout_constraintEnd_toStartOf="@+id/number_picker_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/number_picker_layout"
+        tools:ignore="MissingPrefix" />
+
+    <TextView
+        android:id="@+id/temperature_ok_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@android:string/ok"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingPrefix" />
+
+    <TextView
+        android:id="@+id/temperature_cancel_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@android:string/cancel"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingPrefix" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

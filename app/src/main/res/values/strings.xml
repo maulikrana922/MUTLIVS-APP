@@ -1,0 +1,227 @@
+<resources>
+    <string name="login">Login</string>
+    <string name="connecting">connecting…</string>
+    <string name="usa_login_url">https://us.etrogsystems.com/etrogsystems/api/member-login</string>
+    <string name="israel_login_url">https://gw.etrogsystems.com/etrogsystems/api/member-login</string>
+    <string name="versionString">Version</string>
+    <string name="appVersion">1.2</string>
+    <string name="build">Build</string>
+    <string name="appBuild">1.2.5</string>
+    <string name="Temperature">Temperature</string>
+    <string name="HeartRate">Heart Rate</string>
+    <string name="SpO2">SpO2</string>
+    <string name="Weight">Weight</string>
+    <string name="build_name">Multivs_dev_6_Sep_2022</string>
+    <string-array name="glucose_event_tag_array">
+        <item>Before meal</item>
+        <item>After meal</item>
+        <item>Exercise</item>
+        <item>Medications</item>
+        <item>Sick</item>
+        <item>Other</item>
+    </string-array>
+    <string name="Glucose">Glucose</string>
+    <string name="before_meal">Before meal</string>
+    <string name="after_meal">After meal</string>
+    <string name="exercise">Exercise</string>
+    <string name="medications">Medications</string>
+    <string name="sick">Sick</string>
+    <string name="other">Other</string>
+    <string name="empty_string_int">" %1$d"</string>
+    <string name="searching_for_oximeter">Searching for Oximeter device</string>
+    <string name="oximeter_instructions">Please place your pulse oximeter on your index finger and turn it on</string>
+    <string name="measuring_please_wait">Measuring, please wait</string>
+    <string name="seconds_left">%1$d seconds left</string>
+    <string name="measuring_complete">Measuring complete</string>
+    <string name="blood_pressure_results">%1$d / %2$d</string>
+    <string name="device_is_connected">Device is connected and ready</string>
+    <string name="bpm_instructions">Please place your blood pressure cuff on your arm and turn it on</string>
+    <string name="empty_string_str">"%1$s "</string>
+    <string name="weight_scale_instructions">Please stand on the weight scale.</string>
+    <string name="weight_scale_results">%1$s Lbs</string>
+    <string name="connect_glucose">Please connect your glucose device</string>
+    <string name="glucose_instructions">Please turn on your Glucometer</string>
+    <string name="device_is_worn_correctly">Device is worn correctly, Ready for testing</string>
+    <string name="searching_for_device">searching for device..</string>
+    <string name="multi_vs_init_instructions">Please tap on the image to confirm the MULTIVS placement and start the measurement.</string>
+    <string name="multi_vs_init_instructions_calibration">Please tap on the image to confirm the MULTIVS placement and start the calibration.</string>
+    <string name="measurement_cancelled">measurement was cancelled</string>
+    <string name="configuring_patch_placement">Configuring device placement</string>
+    <string name="multivs_bad_data">Bad data detected. Please retake the test.</string>
+    <string name="us_base_url" translatable="false">https://us.etrogsystems.com/etrogsystems/api/</string>
+    <string name="isr_base_url" translatable="false">https://gw.etrogsystems.com/etrogsystems/api/</string>
+    <string name="user_name">User Name</string>
+    <string name="terms_and_conditions">By clicking Login I indicate that I have read and agree to the Terms and Conditions</string>
+    <string name="connecting_device_please_wait">Connecting Device. Please wait.</string>
+    <string name="turn_on_thermometer">Please turn on your Thermometer.</string>
+    <string name="next">NEXT</string>
+    <string name="enter_manually">Enter Manually</string>
+    <string name="weight">Weight</string>
+    <string name="back">back</string>
+    <string name="connecting_to_weight_scale">Connecting to weight scale…</string>
+    <string name="weight_scale">Weight Scale</string>
+    <string name="lbs" translatable="false">Lbs</string>
+    <string name="dot" translatable="false">.</string>
+    <string name="thermometer">Thermometer</string>
+    <string name="fahrenheit" translatable="false">Fahrenheit</string>
+    <string name="cancel">Cancel</string>
+    <string name="save_result">Save Result</string>
+    <string name="summary">Summary</string>
+    <string name="percentage_symbol" translatable="false">%</string>
+    <string name="turn_on_glucometer">Please turn on your Glucometer device.</string>
+    <string name="choose_event">Choose event</string>
+    <string name="glucometer">Glucometer</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="heart_rate">Heart Rate</string>
+    <string name="blood_pressure_cuff">Blood Pressure Cuff</string>
+    <string name="blt_instructions">Please place your blood pressure cuff on your arm and turn it on.</string>
+    <string name="slash_symbol" translatable="false">/</string>
+    <string name="mmhg" translatable="false">mmHg</string>
+    <string name="systolic" translatable="false">Systolic</string>
+    <string name="diastolic" translatable="false">Diastolic</string>
+    <string name="starting_test_in">Starting test in</string>
+    <string name="ecg_is_on" translatable="false">On</string>
+    <string name="ecg_is_off" translatable="false">Off</string>
+    <string name="posting_results">Posting results</string>
+    <string name="please_wait">Please wait</string>
+    <string name="measurement_failed">Measurement failed. Please retake the test.</string>
+    <string name="finishing_test_please_wait">Finishing test. Please wait</string>
+    <string name="take_measurements">Take Measurements</string>
+    <string name="usa" translatable="false">USA</string>
+    <string name="israel" translatable="false">Israel</string>
+    <string name="mg_dl" translatable="false">mg/dl</string>
+    <string name="bpm" translatable="false">BPM</string>
+    <string name="loading_please_wait">Loading, Please wait.</string>
+    <string name="working">Working…</string>
+    <string name="oxi_instructions">Please place your pulse oximeter on your index finger and turn it on.</string>
+    <string name="pulse_oximeter">Pulse Oximeter</string>
+    <string name="results_will_be_uploaded_as_soon_as_network_is_available">Results will be uploaded as soon as network is available</string>
+    <string name="no_internet_connection_upload_failed">No internet Connection, results will be uploaded at a later time.</string>
+    <string name="n_a" translatable="false">N/A</string>
+    <string name="steps">steps</string>
+    <string name="ecg" translatable="false">ECG</string>
+    <string name="respiratory">Respiratory</string>
+    <string name="multi_vs" translatable="false">MULTIVS</string>
+    <string name="multi_vs_calibration" translatable="false">MULTIVS Calibration</string>
+    <string name="start_measurement">Start Measurement</string>
+    <string name="skip">skip</string>
+    <string name="_2020_etrog_systems_ltd" translatable="false">ETROG SYSTEMS LTD.</string>
+    <string name="version" translatable="false">Ver: 1.0.0</string>
+    <string name="powered_by_etrog_care" translatable="false">Powered by: ETROG®Care</string>
+    <string name="password">Password</string>
+    <string name="choose_country">Choose Country</string>
+    <string name="device_ready_take_measurements">Device is connected.\nPlease take a measurement</string>
+    <string name="successully_uploaded"><big>Results have been uploaded successfully</big></string>
+    <string name="measure_complete_turn_off_device">Measurement Complete.\nYou may turn off the device.</string>
+    <string name="searching_for_your_device">Searching for device..</string>
+    <string name="device_config_please_wait">Configuring device placement. Please wait</string>
+    <string name="multivs_connected_testing_position">A MULTIVS device has been connected.\nTesting for valid device placement</string>
+    <string name="confirm_device_placement">Please Confirm device placement</string>
+    <string name="connecting_to_multivs">Connecting to device. Please wait</string>
+    <string name="not_worn_correctly_please_adjust_device"><big>Device isn\'t worn correctly. Please adjust the device.</big></string>
+    <string name="measurement_failed_big"><big>The measurement has failed.</big></string>
+    <string name="preparing_measurement">preparing measurement</string>
+    <string name="device_disconnected_trying_reconnect">Device is disconnected. Trying to reconnect..</string>
+    <string name="glucose_connected_fetching_data">The device is connected. Fetching latest measurements...</string>
+    <string name="no_recent_measurements_found">No recent measurements found</string>
+    <string name="uploaded_measurements">uploaded measurements</string>
+    <string name="event">Event</string>
+    <string name="blood_glucose">Blood Glucose</string>
+    <string name="take_medications">Take Medications</string>
+    <string name="closing_devices_please_wait">Closing devices. Please wait</string>
+    <string name="belt_middle">Belt Middle</string>
+    <string name="no_calibrations_needed">No calibration needed.</string>
+    <string name="connecting_multivs" translatable="false">Connecting the MULTIVS device</string>
+    <string name="multivs_found">MULTIVS Found!</string>
+    <string name="searching_for_multivs">Searching for MULTIVS device, please wait</string>
+    <string name="search_for_multivs">Searching for MULTIVS</string>
+    <string name="close">Close</string>
+    <string name="checking_device_placement">Checking for proper device attachment.</string>
+    <string name="empty" translatable="false"> </string>
+    <string name="confirm_multivs_position" translatable="false">Please tap on the image to confirm your MULTIVS position</string>
+    <string name="cannot_perform_calibrations_no_bp">Cannot perform calibrations without blood pressure data</string>
+    <string name="continue_btn">Continue</string>
+    <string name="start_calibration">Start Calibration</string>
+    <string name="cancel_calibration">Cancel Calibration</string>
+    <string name="bp_manual_text">%1$d / %2$d mmHg</string>
+    <string name="hr_manual_text">%1$d BPM</string>
+    <string name="measurement_result">%1$d %%</string>
+    <string name="oxi_measuring_please_wait">Measuring, please wait %1$d more seconds</string>
+    <string name="ok">OK</string>
+    <string name="bad_data_recalibrate">Calibration data is inconclusive. Please recalibrate</string>
+    <string name="bad_data_remeasure">Measurement data is inconclusive. Please remeasure</string>
+    <string name="calibration_failed">Calibration failed, please recalibrate</string>
+    <string name="uploading_results">Uploading results</string>
+    <string name="uploading_data_on_server">Uploading data on server</string>
+    <string name="server_not_respond_recalibrate">The server did not respond, please recalibrate</string>
+    <string name="processing_results">Processing results</string>
+    <string name="glucose_results">%1$d mg / dl</string>
+    <string name="temperature_results">%1$s F°</string>
+    <string name="patch_upper_left">Patch Upper Left</string>
+    <string name="patch_middle">Patch Middle</string>
+    <string name="scanning_failed_rescanning">Scanning failed, rescanning</string>
+    <string name="failed_to_connect_device">Failed to connect device</string>
+    <string name="please_make_sure_the_device_is_ready">Please make sure the device is ready</string>
+    <string name="multivs_channel_id">multivs_id</string>
+    <string name="notification_title">MULTIVS</string>
+    <string name="blood_pressure_was_stopped_calibration_cancel">Blood pressure device was stopped. Calibration is cancelled</string>
+    <string name="waiting_for_bp_to_finish">Waiting for blood pressure device to finish</string>
+    <string name="device_not_placed_well_stopping_measurement">The Device is not properly placed on body. Measurement is cancelled</string>
+    <string name="manually_entered_sys_dia_mmhg">Manually entered: %1$d / %2$d mmHg</string>
+    <string name="calibration_cancelled">The calibration was cancelled</string>
+    <string name="device_not_placed_well_stopping_calibration">The Device is not properly placed on body. Calibration is cancelled</string>
+    <string name="calibration_instructions">Please remain seated, do not talk and stay still</string>
+    <string name="spo2_results">%1$d</string>
+    <string name="failed_to_upload_measurements">Failed to upload measurements</string>
+    <string name="measurements">Measurements</string>
+    <string name="task_completed">Task Completed</string>
+    <string name="press_bp_to_start">Activate the blood pressure device to start the measurement</string>
+    <string name="updating_schedule">Updating schedules</string>
+    <string name="measurement_item">measurement_item</string>
+    <string name="medication_item">medication_item</string>
+    <string name="calibration_item">calibration_item</string>
+    <string name="survey_item">survey_item</string>
+    <string name="drug_name">Drug Name</string>
+    <string name="strength">Strength</string>
+    <string name="quantity">Quantity</string>
+    <string name="txtLabelTalkToIris">Care Coordinator</string>
+    <string name="txtLabelWhatNextToDay">What\'s Next Today</string>
+    <string name="dosage_form_route">Dosage Form/Route</string>
+    <string name="taken">Taken</string>
+    <string name="save">save</string>
+    <string name="no_medication_to_be_taken_now">No medication to be taken now.</string>
+    <string name="no_recent_medication_found">No recent medications found.</string>
+    <string name="weather_forecast">Weather Forecast</string>
+    <string name="refreshing_weather_forecast">Refreshing weather forecast…</string>
+    <string name="successfully_uploaded_loc_and_battery">Successfully uploaded location and battery level</string>
+    <string name="failed_to_upload_loc_and_battery">Failed to upload location and battery</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="are_you_sure_you_want_to_upload_your_answers">Are you sure you want to upload your answers?</string>
+    <string name="upload_answers">Upload Answers</string>
+    <string name="no_survey_to_be_taken_now">No Survey to be taken now</string>
+    <string name="you_have_finished_the_survey">You have finished the survey</string>
+    <string name="problem_uploading_survey_data">There was a problem uploading survey data.</string>
+    <string name="uploading_survey">Uploading survey</string>
+    <string name="surveys">Surveys</string>
+    <string name="reports">Reports</string>
+    <string name="refreshing">Refreshing...</string>
+    <string name="reports_internet_message">No internet connection. \nReports function is not available.</string>
+    <string name="internet_slow">Your internet connection is very slow</string>
+    <string name="could_not_find_and_connect_to_a_multivs_device">Couldn\'t find and connect to a MULTIVS device</string>
+    <string-array name="manual_entry">
+        <item>Select Manual Entry</item>
+        <item>true</item>
+        <item>false</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_intervals_active_now">No Intervals Active</string>
+    <string name="no_schedule_available">No schedule available</string>
+    <string name="enter_blood_pressure_manually">Enter Blood pressure manually</string>
+    <string name="the_last_calibration_was">The last calibration wasn\'t valid, please perfrom another one</string>
+    <string name="blood_pressure_calibration_is_required">Blood pressure calibration is required</string>
+    <string name="done_calibration_set_0_3">Done calibration set 0/3</string>
+    <string name="done_measurement_0_3">Done measurement 0/3</string>
+
+</resources>

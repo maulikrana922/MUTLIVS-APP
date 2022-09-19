@@ -1,0 +1,9 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:state_window_focused="false"
+        android:drawable="@android:drawable/radiobutton_on_background" />
+    <item android:state_checked="false" android:state_window_focused="false"
+        android:drawable="@android:drawable/radiobutton_off_background" />
+
+    <item android:state_checked="false" android:drawable="@android:drawable/radiobutton_off_background" />
+    <item android:state_checked="true" android:drawable="@android:drawable/radiobutton_on_background" />
+</selector>

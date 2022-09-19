@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/no_schedule_layout"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/no_schedules_layout_scene">
+
+    <TextView
+        android:id="@+id/no_schedules_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="@string/no_medication_to_be_taken_now"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:drawableBottomCompat="@drawable/empty_wrapper_size_drawable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

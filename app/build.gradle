@@ -1,0 +1,191 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+
+android {
+    signingConfigs {
+        debug {
+            storeFile file('/home/mehul/Mehul Project/MUTLIVS APP/app/keystore/multivs_app.jks')
+            keyAlias 'key0'
+            storePassword 'multivsapp'
+            keyPassword 'multivsapp'
+        }
+        release {
+            storeFile file('/home/mehul/Mehul Project/MUTLIVS APP/app/keystore/multivs_app.jks')
+            storePassword 'multivsapp'
+            keyPassword 'multivsapp'
+            keyAlias 'key0'
+        }
+    }
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.es.multivs"
+        minSdk 23
+        targetSdk 31
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            //buildConfigField 'String', 'SERVER','"https://us.etrogsystems.com/etrogsystems/api/"'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+
+        }
+
+    }
+    flavorDimensions "dev"
+    productFlavors {
+        dev {
+            dimension "dev"
+            applicationIdSuffix ".dev"
+            buildConfigField 'String', 'SERVER','"https://us.etrogsystems.com/etrogsystems_dev/api/"'
+        }
+        production {
+            dimension "production"
+            buildConfigField 'String', 'SERVER','"https://us.etrogsystems.com/etrogsystems/api/"'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+    dataBinding{
+        enabled = true
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation "androidx.fragment:fragment-ktx:1.4.0"
+    implementation "androidx.activity:activity-ktx:1.4.0"
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'com.google.android.material:material:1.6.0-alpha01'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // lifecycle awareness
+    def lifecycle_version = "2.4.0"
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    // saved state
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
+    // Annotation processor
+    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+    // app lifecycle
+    implementation "androidx.lifecycle:lifecycle-process:$lifecycle_version"
+    // reactive streams
+    implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycle_version"
+
+    // gif library
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
+
+    // graphView
+    implementation 'com.jjoe64:graphview:4.2.2'
+
+    // glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    kapt 'com.github.bumptech.glide:compiler:4.12.0'
+
+    // location
+    implementation 'com.google.android.gms:play-services-location:19.0.0'
+
+    // WorkManager dependency
+    implementation("androidx.work:work-runtime-ktx:2.7.1")
+    implementation 'androidx.hilt:hilt-work:1.0.0'
+    kapt 'androidx.hilt:hilt-compiler:1.0.0'
+
+
+    // volley
+    implementation 'com.android.volley:volley:1.2.1'
+
+    // identifier
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.0'
+    implementation("androidx.ads:ads-identifier:1.0.0-alpha04")
+
+    // dimen
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    // hilt
+    implementation "com.google.dagger:hilt-android:2.38.1"
+    kapt "com.google.dagger:hilt-compiler:2.38.1"
+
+    // navigation
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+
+    // room
+    def room_version = "2.4.0"
+    implementation "androidx.room:room-ktx:2.4.0"
+    kapt  "androidx.room:room-compiler:2.4.0"
+    annotationProcessor "androidx.room:room-compiler:2.4.0"
+
+    // JSON
+    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.11.0'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.9.8'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.8'
+
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    implementation "ru.gildor.coroutines:kotlin-coroutines-okhttp:1.0"
+
+    // device sdk & libraries
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/AicareUtils.jar')
+    implementation files('libs/AlgorithmUtil.jar')
+    implementation files('libs/iWeightLibrary.jar')
+    implementation(name: 'bluetoothlibrary-release', ext: 'aar')
+    implementation project(path: ':blesdk')
+
+    implementation "androidx.datastore:datastore-preferences:1.0.0"
+
+    //Firebase
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.2.11'
+    implementation 'com.google.firebase:firebase-analytics-ktx:21.1.0'
+
+    // canary leak
+//    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
+
+}

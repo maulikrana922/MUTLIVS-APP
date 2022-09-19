@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:textSize="@dimen/_12ssp"
+    android:padding="@dimen/_5sdp"
+    android:button="@null"
+    android:drawableBottom="@drawable/rating_radio_button"
+    android:text="4 - Best specialist possible"
+    android:gravity="center_horizontal"
+    android:fontFamily="@font/roboto_regular"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

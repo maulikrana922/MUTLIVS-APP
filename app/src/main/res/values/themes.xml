@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="base_theme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="shapeAppearanceLargeComponent">@style/CustomShapeAppearanceBottomSheetDialog</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="splashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!--<item name="android:windowBackground">@drawable/splash</item>-->
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="shapeAppearanceLargeComponent">@style/CustomShapeAppearanceBottomSheetDialog</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="NumberPickerText">
+        <item name="android:textSize">@dimen/_20ssp</item>
+        <item name="colorControlNormal">@android:color/transparent</item>
+    </style>
+
+    <style name="measurement_input_field">
+        <item name="android:elevation">2dp</item>
+        <item name="android:textSize">@dimen/_15ssp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="input_title">
+        <item name="android:textSize">@dimen/_17ssp</item>
+    </style>
+
+    <style name="CustomShapeAppearanceBottomSheetDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/bottom_up</item>
+        <item name="android:windowExitAnimation">@anim/bottom_down</item>
+    </style>
+
+    <style name="toastTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="DialogTheme" parent="base_theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@color/gray_color</item>
+    </style>
+
+
+</resources>

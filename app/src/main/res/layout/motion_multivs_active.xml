@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motion_multivs_active"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_4sdp"
+    android:visibility="invisible"
+    app:layoutDescription="@xml/motion_multivs_active_scene">
+
+    <TextView
+        android:id="@+id/multivs_is_active_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MULTIVS active"
+        android:textColor="@color/progress_color"
+        android:textSize="@dimen/_12ssp"
+        />
+
+    <ImageView
+        android:id="@+id/multivs_active_icon"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:src="@drawable/es_p00212b_sm"
+        app:layout_constraintEnd_toEndOf="@+id/multivs_is_active_tv"
+        app:layout_constraintStart_toStartOf="@+id/multivs_is_active_tv"
+        app:layout_constraintTop_toBottomOf="@+id/multivs_is_active_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

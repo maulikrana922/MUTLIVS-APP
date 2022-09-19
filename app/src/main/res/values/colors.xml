@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_white">#DEDFDF</color>
+    <color name="darker_gray">#CACACA</color>
+    <color name="grey">#595959</color>
+    <color name="colorPrimary">#0071BD</color>
+    <color name="color_light_primary">#68B3E4</color>
+    <color name="colorDarkRed">#B30E0E</color>
+    <color name="transparentWhite">#E6FFFFFF</color>
+    <color name="ap_transparent">#00000000</color>
+    <color name="green_on">#4CAF50</color>
+    <color name="red_off">#C62828</color>
+    <color name="light_grey">#ECECEC</color>
+    <color name="lighter_grey">#919191</color>
+    <color name="dark_green">#239E28</color>
+    <color name="transparent_light_grey">#60858585</color>
+    <color name="lighter_primary">#E4E4E4</color>
+    <color name="boris_color">#065C97</color>
+    <color name="transparent_white">#6FFFFFFF</color>
+    <color name="grayText">#8A9399</color>
+    <color name="colorPrimaryDark">#004C80</color>
+    <color name="progress_color">#00BCEE</color>
+    <color name="gray_color">#F1F1F1</color>
+    <color name="image_bg">#ECE0FD</color>
+
+</resources>

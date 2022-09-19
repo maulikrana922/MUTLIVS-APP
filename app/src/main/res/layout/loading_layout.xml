@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/loading_container"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_loading"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18ssp"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_margin="@dimen/_15sdp"
+        android:text="@string/loading_please_wait"/>
+
+    <pl.droidsonroids.gif.GifImageButton
+        android:layout_width="@dimen/_80sdp"
+        android:scaleType="fitCenter"
+        android:backgroundTint="#00E3E3E3"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/care_gif"/>
+
+</LinearLayout>

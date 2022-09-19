@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/option_1"
+        android:title="@string/before_meal" />
+    <item android:id="@+id/option_2"
+        android:title="@string/after_meal" />
+    <item android:id="@+id/option_3"
+        android:title="@string/exercise" />
+    <item android:id="@+id/option_4"
+        android:title="@string/medications" />
+    <item android:id="@+id/option_5"
+        android:title="@string/sick" />
+    <item android:id="@+id/option_6"
+        android:title="@string/other" />
+</menu>
